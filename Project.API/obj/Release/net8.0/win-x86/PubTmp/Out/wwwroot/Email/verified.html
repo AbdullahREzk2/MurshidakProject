@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+            .icon.success {
+                background-color: #d4edda;
+                color: #28a745;
+                animation: scaleIn 0.5s ease-out 0.2s both;
+            }
+
+            .icon.error {
+                background-color: #f8d7da;
+                color: #dc3545;
+                animation: shake 0.5s ease-out 0.2s;
+            }
+
+            .icon.invalid {
+                background-color: #fff3cd;
+                color: #ffc107;
+                animation: scaleIn 0.5s ease-out 0.2s both;
+            }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-10px);
+            }
+
+            75% {
+                transform: translateX(10px);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #content {
+            display: none;
+        }
+
+            #content.show {
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="loading">
+            <div class="loading"></div>
+            <h1>Verifying your email...</h1>
+        </div>
+
+        <div id="content">
+            <div class="icon" id="icon"></div>
+            <h1 id="title"></h1>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script>
+        // Get status from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+
+        // Simulate loading
+        setTimeout(() => {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').classList.add('show');
+
+            const icon = document.getElementById('icon');
+            const title = document.getElementById('title');
+            const message = document.getElementById('message');
+
+            switch (status) {
+                case 'success':
+                    icon.className = 'icon success';
+                    icon.innerHTML = '✓';
+                    title.textContent = 'Email Verified Successfully!';
+                    message.textContent = 'Your email has been confirmed. You can now log in to your account and start using our services.';
+                    break;
+
+                case 'failed':
+                    icon.className = 'icon error';
+                    icon.innerHTML = '✕';
+                    title.textContent = 'Verification Failed';
+                    message.textContent = 'We couldn\'t verify your email. The link may have expired or is invalid. Please request a new confirmation email.';
+                    break;
+
+                case 'invalid':
+                    icon.className = 'icon invalid';
+                    icon.innerHTML = '⚠';
+                    title.textContent = 'Invalid Request';
+                    message.textContent = 'The verification link is invalid or missing required parameters. Please check your email and try again.';
+                    break;
+
+                default:
+                    icon.className = 'icon invalid';
+                    icon.innerHTML = '?';
+                    title.textContent = 'Unknown Status';
+                    message.textContent = 'Something went wrong. Please contact support if the problem persists.';
+            }
+        }, 1500);
+    </script>
+</body>
+</html>

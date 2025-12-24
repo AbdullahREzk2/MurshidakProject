@@ -1,0 +1,3 @@
+wwwroot\Email\verified.html
+wwwroot\Password\reset-password.html
+wwwroot\uploads\profile_images\78fe0130-d123-4640-ad4d-4110d7c0e73c.jpg

@@ -1,0 +1,15 @@
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\bin\Debug\net8.0\Project.BLL.deps.json
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\bin\Debug\net8.0\Project.BLL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\bin\Debug\net8.0\Project.BLL.pdb
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\bin\Debug\net8.0\Project.DAL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\bin\Debug\net8.0\Project.DAL.pdb
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.csproj.AssemblyReference.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.AssemblyInfoInputs.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.AssemblyInfo.cs
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.csproj.CoreCompileInputs.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project..8BC1ACF0.Up2Date
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\refint\Project.BLL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\Project.BLL.pdb
+F:\.NET study\Projects\MamdohProject\Project\Project.BLL\obj\Debug\net8.0\ref\Project.BLL.dll

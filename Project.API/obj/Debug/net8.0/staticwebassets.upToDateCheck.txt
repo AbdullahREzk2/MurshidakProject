@@ -1,0 +1,2 @@
+wwwroot\Email\verified.html
+wwwroot\Password\reset-password.html

@@ -1,0 +1,14 @@
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.deps.json
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.runtimeconfig.json
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.pdb
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.csproj.AssemblyReference.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.AssemblyInfoInputs.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.AssemblyInfo.cs
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.csproj.CoreCompileInputs.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\refint\Project.DAL.dll
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.pdb
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.genruntimeconfig.cache
+F:\.NET study\Projects\MamdohProject\Project\Project.DAL\obj\Debug\net8.0\ref\Project.DAL.dll
